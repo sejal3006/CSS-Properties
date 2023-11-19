@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+  }
+
+.bg-image {
+    background-image: url(https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 11vh;
+    background-color:#333333 ;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo img {
+    height: 100%;
+    aspect-ratio: 1;
+}
+.navbar {
+    padding: 2.5% 0;
+    width: 45%;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+nav li {
+    color: white;
+    font-size: 1.2em;
+}
+
+#page1 {
+    /* height: 100vh; */
+    width: 100%;
+}
+
+#page1 section {
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#page1 h1 {
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+#page1 p {
+    font-size: 1.2em;
+    padding-left: 4%;
+    max-width: 48%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.nav-btn{
+    border: none;
+    padding: 15px 25px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.nav-btn:hover {
+    background-color: transparent;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+#page2 {
+    width: 100%;
+    background: #F2F2F2;
+}
+
+#page3 {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.about_items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.item-container {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.essentials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 350px;;
+    text-align: center;
+    padding: 30px 40px;
+    box-shadow: 10px 5px 10px rgb(91, 90, 90);
+    border-radius: 5px;
+}
+
+.item img {
+    height: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.item h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.item p {
+    margin-top: -15px;
+}
+
+#page4 {
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.contact {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contact h2 {
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.end {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.links  {
+    color: rgb(88, 86, 86);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.right{
+    padding: 20px;
+}
+
+.right form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.right input{
+    padding: 12px;
+}
+
+.right button{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    
+}
+
+.right button:hover {
+    background-color: #333333;
+    transition: all 0.6s ease;
+}
